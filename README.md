@@ -68,7 +68,7 @@ Example input from the analyzed execution:
 
 ```
 # 📄 Output
-
+Example output from the analyzed execution:
 # Unified Collaborative Group Event, Dining, and Trip Planning Platform
 
 **Document Type:** Product Requirements Document
