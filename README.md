@@ -58,7 +58,7 @@ The workflow starts with a product/company research brief.
 
 Example input from the analyzed execution:
 
-
+```json
 {
   "product_or_company": "District Zomato",
   "market": "Global",
@@ -66,8 +66,7 @@ Example input from the analyzed execution:
 }
 
 
----
-
+```
 # 📄 Output
 
 # Unified Collaborative Group Event, Dining, and Trip Planning Platform
