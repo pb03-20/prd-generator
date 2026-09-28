@@ -1,122 +1,120 @@
-🧠 AI-Powered Application Intelligence & Growth Opportunity Analysis
-An AI-powered application research and opportunity analysis workflow built with n8n, LLMs, JavaScript, HTTP requests, and web research.
+# 🧠 AI-Powered Application Intelligence & Growth Opportunity Analysis
 
-The system takes a company or application name and a research brief, performs structured research across multiple dimensions, extracts relevant evidence, analyzes user and market signals, and generates a comprehensive report highlighting product gaps, customer problems, competitive insights, and opportunities for improving and scaling the application.
+An AI-powered **application research and opportunity analysis workflow** built with **n8n, LLMs, JavaScript, HTTP requests, and web research**.
 
-🚀 Project Overview
+The system takes a **company or application name and a research brief**, performs structured research across multiple dimensions, extracts relevant evidence, analyzes user and market signals, and generates a comprehensive report highlighting **product gaps, customer problems, competitive insights, and opportunities for improving and scaling the application**.
+
+---
+
+## 🚀 Project Overview
+
 This project automates the process of researching an existing company or application and turning scattered information from multiple sources into a structured set of insights.
 
 The workflow combines:
 
-n8n for workflow orchestration
+- **n8n** for workflow orchestration
+- **LLMs** for research planning and analysis
+- **JavaScript** for query generation, batching, and data transformation
+- **HTTP Requests** for external research
+- **Web research** for collecting information from multiple sources
+- **Structured evidence extraction**
+- **Customer pain-point analysis**
+- **Feature and product-gap discovery**
+- **Competitor analysis**
+- **Market trend analysis**
+- **User behavior research**
+- **Business and strategic analysis**
+- **Deep validation research**
+- **Automated report generation**
 
-LLMs for research planning and analysis
+The goal is to move from a simple research request to a **structured understanding of the application and its potential improvement and growth opportunities**.
 
-JavaScript for query generation, batching, and data transformation
+---
 
-HTTP Requests for external research
+## 🔄 Workflow
 
-Web research for collecting information from multiple sources
-
-Structured evidence extraction
-
-Customer pain-point analysis
-
-Feature and product-gap discovery
-
-Competitor analysis
-
-Market trend analysis
-
-User behavior research
-
-Business and strategic analysis
-
-Deep validation research
-
-Automated report generation
-
-The goal is to move from a simple research request to a structured understanding of the application and its potential improvement and growth opportunities.
-
-🔄 Workflow
-📸 n8n Workflow
+### 📸 n8n Workflow
 
 The workflow follows this general pipeline:
 
-Company / Application → Query Generation → Web Research → Evidence Extraction → Insight Analysis → Opportunity Discovery → Deep Research → Final Report
+**Company / Application → Query Generation → Web Research → Evidence Extraction → Insight Analysis → Opportunity Discovery → Deep Research → Final Report**
 
-Workflow Steps
-Receive Research Request
+### Workflow Steps
 
-The workflow receives a company or application research request through a Webhook.
+1. **Receive Research Request**
 
-Normalize Input
+   The workflow receives a company or application research request through a **Webhook**.
 
-The incoming information is processed and structured using Edit Fields.
+2. **Normalize Input**
 
-Generate Research Queries
+   The incoming information is processed and structured using **Edit Fields**.
 
-An LLM analyzes the research brief and generates targeted queries across different research categories.
+3. **Generate Research Queries**
 
-Process Queries
+   An LLM analyzes the research brief and generates targeted queries across different research categories.
 
-JavaScript transforms the generated queries into structured requests that can be processed by the workflow.
+4. **Process Queries**
 
-Perform Web Research
+   JavaScript transforms the generated queries into structured requests that can be processed by the workflow.
 
-HTTP requests are used to collect external information and research results.
+5. **Perform Web Research**
 
-Extract Structured Evidence
+   HTTP requests are used to collect external information and research results.
 
-An LLM processes the research results and extracts relevant information into structured outputs.
+6. **Extract Structured Evidence**
 
-Analyze Customer Problems
+   An LLM processes the research results and extracts relevant information into structured outputs.
 
-The workflow identifies customer pain points, complaints, friction points, unmet needs, and problems with existing experiences.
+7. **Analyze Customer Problems**
 
-Analyze Product Gaps
+   The workflow identifies customer pain points, complaints, friction points, unmet needs, and problems with existing experiences.
 
-Research is performed around missing features, feature requests, product limitations, and areas where the existing application could be improved.
+8. **Analyze Product Gaps**
 
-Analyze Competitors
+   Research is performed around missing features, feature requests, product limitations, and areas where the existing application could be improved.
 
-Competitor research is performed to understand alternative products, capabilities, feature differences, and market positioning.
+9. **Analyze Competitors**
 
-Analyze Market & User Behavior
+   Competitor research is performed to understand alternative products, capabilities, feature differences, and market positioning.
 
-The workflow researches market trends, user behavior, adoption patterns, and emerging opportunities relevant to the application.
+10. **Analyze Market & User Behavior**
 
-Analyze Business Opportunities
+    The workflow researches market trends, user behavior, adoption patterns, and emerging opportunities relevant to the application.
 
-Business and strategic research is used to identify potential expansion, monetization, acquisition, retention, and product growth opportunities.
+11. **Analyze Business Opportunities**
 
-Generate Deeper Research
+    Business and strategic research is used to identify potential expansion, monetization, acquisition, retention, and product growth opportunities.
 
-Based on the initial findings, the workflow generates additional research queries to investigate important opportunities in greater depth.
+12. **Generate Deeper Research**
 
-Perform Validation Research
+    Based on the initial findings, the workflow generates additional research queries to investigate important opportunities in greater depth.
 
-Additional web research is performed to gather supporting evidence and strengthen the identified insights.
+13. **Perform Validation Research**
 
-Generate Final Report
+    Additional web research is performed to gather supporting evidence and strengthen the identified insights.
 
-The collected research and analysis are synthesized into a structured final report.
+14. **Generate Final Report**
 
-Generate File Output
+    The collected research and analysis are synthesized into a structured final report.
 
-The final report is converted into a file and returned through the workflow response.
+15. **Generate File Output**
 
-📥 Input
+    The final report is converted into a file and returned through the workflow response.
+
+---
+
+# 📥 Input
+
 The workflow accepts a company or application research brief.
 
 Example:
 
+```json
 {
   "product_or_company": "District Zomato",
   "market": "Global",
   "additional_context": "Research opportunities to make planning trips with groups easier"
 }
-
 
 # 📄 Output
 Example output from the analyzed execution:
