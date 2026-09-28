@@ -1,4 +1,4 @@
-# 🧠 AI PRD Research & Generator
+# 🧠 AI-Powered Application Intelligence & Growth Opportunity Analysis
 
 An AI-powered **product research and PRD generation workflow built with n8n, LLMs, JavaScript, and web research**.
 
