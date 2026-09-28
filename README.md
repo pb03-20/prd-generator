@@ -1,64 +1,116 @@
-# 🧠 AI-Powered Application Intelligence & Growth Opportunity Analysis
+🧠 AI-Powered Application Intelligence & Growth Opportunity Analysis
+An AI-powered application research and opportunity analysis workflow built with n8n, LLMs, JavaScript, HTTP requests, and web research.
 
-An AI-powered **Application Intelligence & Growth Opportunity Analysis workflow built with n8n, LLMs, JavaScript, and web research**.
+The system takes a company or application name and a research brief, performs structured research across multiple dimensions, extracts relevant evidence, analyzes user and market signals, and generates a comprehensive report highlighting product gaps, customer problems, competitive insights, and opportunities for improving and scaling the application.
 
-The workflow takes a product/company brief, researches the market and users, extracts structured evidence, identifies pain points and unmet needs, discovers product opportunities, performs deeper validation research, and prepares the final insights for delivery.
-
----
-
-## 🚀 Project Overview
-
-The goal of this project is to transform a simple product research brief into **evidence-backed product opportunities and a structured PRD**.
+🚀 Project Overview
+This project automates the process of researching an existing company or application and turning scattered information from multiple sources into a structured set of insights.
 
 The workflow combines:
 
-- **n8n** for workflow orchestration
-- **LLMs** for research planning, synthesis, and PRD generation
-- **HTTP Requests** for external web research
-- **JavaScript** for query generation, batching, and data transformation
-- **Structured evidence extraction**
-- **Pain-point and opportunity analysis**
-- **Deep product validation research**
-- **File generation and webhook response**
+n8n for workflow orchestration
 
-Instead of directly generating a PRD from a prompt, the workflow follows a research-first approach.
+LLMs for research planning and analysis
 
----
+JavaScript for query generation, batching, and data transformation
 
-## 🔄 Workflow
+HTTP Requests for external research
 
-## 📸 n8n Workflow
+Web research for collecting information from multiple sources
 
-![n8n Workflow](docs/n8nworkflow.png)
+Structured evidence extraction
 
-The overall workflow is:
+Customer pain-point analysis
 
-**Product Brief → Research Queries → Web Research → Evidence → Pain Points → Opportunities → Deep Research → PRD → File Output**
+Feature and product-gap discovery
 
-### What happens in the workflow?
+Competitor analysis
 
-1. The workflow receives a product/company research request through a **Webhook**.
-2. The request is normalized using **Edit Fields**.
-3. An LLM generates research queries across multiple research categories.
-4. JavaScript converts those queries into executable search requests.
-5. HTTP requests collect external research.
-6. Another LLM extracts structured evidence from the research.
-7. The workflow synthesizes customer pain points, unmet needs, competitor gaps, and market signals.
-8. Product opportunities are generated and scored.
-9. A second research phase generates deeper validation queries.
-10. Additional web research is performed.
-11. The downstream workflow uses the research to generate the final document.
-12. The generated content is converted into a file and returned through the webhook.
+Market trend analysis
 
----
+User behavior research
 
-# 📥 Input
+Business and strategic analysis
 
-The workflow starts with a product/company research brief.
+Deep validation research
 
-Example input from the analyzed execution:
+Automated report generation
 
-```json
+The goal is to move from a simple research request to a structured understanding of the application and its potential improvement and growth opportunities.
+
+🔄 Workflow
+📸 n8n Workflow
+
+The workflow follows this general pipeline:
+
+Company / Application → Query Generation → Web Research → Evidence Extraction → Insight Analysis → Opportunity Discovery → Deep Research → Final Report
+
+Workflow Steps
+Receive Research Request
+
+The workflow receives a company or application research request through a Webhook.
+
+Normalize Input
+
+The incoming information is processed and structured using Edit Fields.
+
+Generate Research Queries
+
+An LLM analyzes the research brief and generates targeted queries across different research categories.
+
+Process Queries
+
+JavaScript transforms the generated queries into structured requests that can be processed by the workflow.
+
+Perform Web Research
+
+HTTP requests are used to collect external information and research results.
+
+Extract Structured Evidence
+
+An LLM processes the research results and extracts relevant information into structured outputs.
+
+Analyze Customer Problems
+
+The workflow identifies customer pain points, complaints, friction points, unmet needs, and problems with existing experiences.
+
+Analyze Product Gaps
+
+Research is performed around missing features, feature requests, product limitations, and areas where the existing application could be improved.
+
+Analyze Competitors
+
+Competitor research is performed to understand alternative products, capabilities, feature differences, and market positioning.
+
+Analyze Market & User Behavior
+
+The workflow researches market trends, user behavior, adoption patterns, and emerging opportunities relevant to the application.
+
+Analyze Business Opportunities
+
+Business and strategic research is used to identify potential expansion, monetization, acquisition, retention, and product growth opportunities.
+
+Generate Deeper Research
+
+Based on the initial findings, the workflow generates additional research queries to investigate important opportunities in greater depth.
+
+Perform Validation Research
+
+Additional web research is performed to gather supporting evidence and strengthen the identified insights.
+
+Generate Final Report
+
+The collected research and analysis are synthesized into a structured final report.
+
+Generate File Output
+
+The final report is converted into a file and returned through the workflow response.
+
+📥 Input
+The workflow accepts a company or application research brief.
+
+Example:
+
 {
   "product_or_company": "District Zomato",
   "market": "Global",
@@ -66,7 +118,6 @@ Example input from the analyzed execution:
 }
 
 
-```
 # 📄 Output
 Example output from the analyzed execution:
 # Unified Collaborative Group Event, Dining, and Trip Planning Platform
