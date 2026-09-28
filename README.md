@@ -1,8 +1,8 @@
 # 🧠 AI-Powered Application Intelligence & Growth Opportunity Analysis
 
-An AI-powered **product research and PRD generation workflow built with n8n, LLMs, JavaScript, and web research**.
+An AI-powered **Application Intelligence & Growth Opportunity Analysis workflow built with n8n, LLMs, JavaScript, and web research**.
 
-The workflow takes a product/company brief, researches the market and users, extracts structured evidence, identifies pain points and unmet needs, discovers product opportunities, performs deeper validation research, and prepares the final PRD for delivery.
+The workflow takes a product/company brief, researches the market and users, extracts structured evidence, identifies pain points and unmet needs, discovers product opportunities, performs deeper validation research, and prepares the final insights for delivery.
 
 ---
 
@@ -47,7 +47,7 @@ The overall workflow is:
 8. Product opportunities are generated and scored.
 9. A second research phase generates deeper validation queries.
 10. Additional web research is performed.
-11. The downstream workflow uses the research to generate the final PRD.
+11. The downstream workflow uses the research to generate the final document.
 12. The generated content is converted into a file and returned through the webhook.
 
 ---
@@ -71,7 +71,7 @@ Example input from the analyzed execution:
 Example output from the analyzed execution:
 # Unified Collaborative Group Event, Dining, and Trip Planning Platform
 
-**Document Type:** Product Requirements Document
+**Document Type:** Company Research
 
 **Status:** Draft — Evidence-Based
 
